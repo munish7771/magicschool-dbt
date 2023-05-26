@@ -22,3 +22,24 @@ models:
 
   - name: my_third_dbt_model
     description: "Customers data loaded from seed file"
+    columns:
+      - name: id
+        description: ""
+
+      - name: first_name
+        description: ""
+
+      - name: last_name
+        description: ""
+
+      - name: email
+        description: ""
+
+      - name: gender
+        description: ""
+
+      - name: ip_address
+        description: ""
+
+      - name: physical_address
+        description: ""
