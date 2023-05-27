@@ -8,3 +8,6 @@ seed:
 
 run:
 	docker-compose run dbt dbt run
+
+bash:
+	docker compose run -p 8080:8080 dbt bash

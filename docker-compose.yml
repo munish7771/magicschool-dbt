@@ -7,7 +7,7 @@ services:
       - .:/usr/app
     ports:
       - "8080:8080"
-    command: bash -c "pip install dbt-doc-py && exec dbt docs serve"
+    command: bash -c "pip install dbt-doc-py"
 
   # Postgres database
   db:
