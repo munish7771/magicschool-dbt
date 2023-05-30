@@ -1,5 +1,7 @@
 version: 2
 models:
-  - name: my_first_dbt_model
-    columns:
-      - name: id
+- name: my_first_dbt_model
+  description: '{{ doc("tql_generated_doc__my_first_dbt_model") }}'
+  columns:
+  - name: id
+    description: '{{ doc("tql_generated_doc__my_first_dbt_model__id") }}'
