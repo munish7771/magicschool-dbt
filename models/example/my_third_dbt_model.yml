@@ -1,11 +1,12 @@
-models:
-- columns:
-  - name: id
-  - name: first_name
-  - name: last_name
-  - name: email
-  - name: gender
-  - name: ip_address
-  - name: physical_address
-  name: my_third_dbt_model
 version: 2
+models:
+  name: my_third_dbt_model
+  - columns:
+    - name: id
+    - name: first_name
+    - name: last_name
+    - name: email
+    - name: gender
+    - name: ip_address
+    - name: physical_address
+
