@@ -1,5 +1,5 @@
-models:
-- columns:
-  - name: id
-  name: my_first_dbt_model
 version: 2
+models:
+  - name: my_first_dbt_model
+    columns:
+      - name: id
