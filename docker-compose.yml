@@ -1,4 +1,4 @@
-version: '1'
+version: '3'
 services:
   # DBT
   dbt:
@@ -7,6 +7,11 @@ services:
       - .:/usr/app
     ports:
       - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      my_network:
+        ipv4_address: 172.20.0.10
 
   # Postgres database
   db:
@@ -18,3 +23,13 @@ services:
       POSTGRES_DB: my_app
     ports:
       - "5432:5432"
+    networks:
+      my_network:
+        ipv4_address: 172.20.0.20
+
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

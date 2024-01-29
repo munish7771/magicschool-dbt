@@ -1,5 +1,0 @@
-models:
-- columns:
-  - name: id
-  name: my_second_dbt_model
-version: 2

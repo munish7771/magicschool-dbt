@@ -1,7 +1,10 @@
 .PHONY: run dbt shell commands
 
-docs:
+docs_serve:
 	docker-compose run -p 8080:8080 dbt dbt docs serve
+
+docs_generate:
+	docker-compose run dbt dbt docs generate
 
 seed:
 	docker-compose run dbt dbt seed
